@@ -9,9 +9,17 @@
 namespace Home\Model;
 
 
-use Think\Model;
+use Think\Model\RelationModel;
 
-class UserinfoModel extends Model
+class UserinfoModel extends RelationModel
 {
+    protected $_link = [
 
+        'archives' => [
+            'mapping_type' => self::HAS_ONE,
+            'class_name' => 'archives',
+            'foreign_key' => 'userId',
+        ]
+
+    ];
 }

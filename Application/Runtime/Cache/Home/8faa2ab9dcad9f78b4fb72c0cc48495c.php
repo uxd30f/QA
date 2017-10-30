@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="/ThinkPHP/Public/layui/css/layui.css">
+    <link rel="stylesheet" href="/studentSystem/Public/layui/css/layui.css">
 </head>
 <body style="">
         <table class="layui-table" style="margin: 10px;width: 480px;" >
@@ -21,11 +21,11 @@
                 </tr>
                 <tr>
                     <td align="center">年龄</td>
-                    <td style="width: 50px;"><?php echo ($item["age"]); ?></td>
+                    <td style="width: 50px;"><?php echo ($item["archives"]["age"]); ?></td>
                 </tr>
                 <tr>
                     <td align="center">邮箱</td>
-                    <td style="width: 50px;"><?php echo ($item["email"]); ?></td>
+                    <td style="width: 50px;"><?php echo ($item["archives"]["email"]); ?></td>
                 </tr>
                 <tr>
                     <td align="center">添加时间</td>

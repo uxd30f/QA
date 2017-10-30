@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="/ThinkPHP/Public/layui/css/layui.css">
-    <script src="/ThinkPHP/Public/layui/layui.js"></script>
-    <script src="/ThinkPHP/Public/jquery.min.js"></script>
-    <script src="/ThinkPHP/Public/layui/layui.all.js"></script>
+    <link rel="stylesheet" href="/studentSystem/Public/layui/css/layui.css">
+    <script src="/studentSystem/Public/layui/layui.js"></script>
+    <script src="/studentSystem/Public/jquery.min.js"></script>
+    <script src="/studentSystem/Public/layui/layui.all.js"></script>
 </head>
 <body>
 <div class="layui-form" style="width: 90%;padding-top: 5px;">
@@ -25,13 +25,13 @@
     <div class="layui-form-item">
         <label class="layui-form-label">年龄</label>
         <div class="layui-input-block">
-            <input value="<?php echo ($item["age"]); ?>" type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input age">
+            <input value="<?php echo ($item["archives"]["age"]); ?>" type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input age">
         </div>
     </div>
     <div class="layui-form-item">
         <label class="layui-form-label">邮箱</label>
         <div class="layui-input-block">
-            <input value="<?php echo ($item["email"]); ?>" type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input email">
+            <input value="<?php echo ($item["archives"]["email"]); ?>" type="text" name="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input email">
         </div>
     </div>
     <div class="layui-form-item">

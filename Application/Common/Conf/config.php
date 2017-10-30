@@ -9,4 +9,6 @@ return array(
     'DB_PWD'    => 'root', // 密码
     'DB_PORT'   => 3306, // 端口
     'DB_CHARSET'=> 'utf8', // 字符集
+
+    'SHOW_PAGE_TRACE' =>true,
 );

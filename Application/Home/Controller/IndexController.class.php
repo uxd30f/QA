@@ -8,7 +8,8 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $this->list = M("Userinfo")->order('id desc')->limit(10)->select();
+        $data = D("Userinfo")->order('id desc')->relation('archives')->limit(10)->select();
+        $this->list = $data;
         $this->display('index');
     }
 
@@ -44,7 +45,7 @@ class IndexController extends Controller
 
     public function Edit($id)
     {
-        $this->item = M("Userinfo")->where("id={$id}")->find();
+        $this->item = D("Userinfo")->relation('archives')->where("id={$id}")->find();
         $this->display('Edit');
     }
 
@@ -68,7 +69,7 @@ class IndexController extends Controller
 
     public function Info($id)
     {
-        $this->item = M("Userinfo")->where("id={$id}")->find();
+        $this->item = D("Userinfo")->where("id={$id}")->relation(true)->find();
         $this->display('Info');
     }
 }

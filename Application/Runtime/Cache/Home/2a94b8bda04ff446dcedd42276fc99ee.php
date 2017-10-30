@@ -6,10 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>用户信息管理</title>
-    <link rel="stylesheet" href="/ThinkPHP/Public/layui/css/layui.css">
-    <script src="/ThinkPHP/Public/layui/layui.js"></script>
-    <script src="/ThinkPHP/Public/layui/layui.all.js"></script>
-    <script src="/ThinkPHP/Public/jquery.min.js"></script>
+    <link rel="stylesheet" href="/studentSystem/Public/layui/css/layui.css">
+    <script src="/studentSystem/Public/layui/layui.js"></script>
+    <script src="/studentSystem/Public/layui/layui.all.js"></script>
+    <script src="/studentSystem/Public/jquery.min.js"></script>
 </head>
 <body>
 <div class="layui-container" style="margin-top: 50px;">
@@ -35,8 +35,7 @@
             <thead>
             <tr>
                 <th>编号</th>
-                <th>姓名</th>
-                <th>年龄</th>
+                <th>用户名</th>
                 <th>邮箱</th>
                 <th>添加时间</th>
                 <th>修改时间</th>
@@ -47,8 +46,7 @@
             <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?><tr id="N<?php echo ($item["id"]); ?>">
                     <td align="center"><?php echo ($item["id"]); ?></td>
                     <td><?php echo ($item["name"]); ?></td>
-                    <td><?php echo ($item["age"]); ?></td>
-                    <td><?php echo ($item["email"]); ?></td>
+                    <td><?php echo ($item["archives"]["email"]); ?></td>
                     <td><?php echo ($item["createat"]); ?></td>
                     <td><?php echo ($item["updateat"]); ?></td>
                     <td>
